@@ -13,7 +13,6 @@ RUN dpkg --add-architecture i386 && apt-get update && \
     gcc \
     wget \
     curl \
-    sh \
     ltrace \
     strace \
     cmake \
@@ -22,7 +21,7 @@ RUN dpkg --add-architecture i386 && apt-get update && \
     ruby \
     vim \
     nano \
-    libc6:i386 libncurses5:i386 libstdc++6:i386 \
+    libc6:i386 libncurses5:i386 libstdc++6:i386 && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* 
 # python/ruby packages & gdb-plugin
