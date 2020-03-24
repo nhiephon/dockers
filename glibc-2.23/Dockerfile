@@ -17,6 +17,7 @@ RUN dpkg --add-architecture i386 && apt-get update && \
     strace \
     cmake \
     python-capstone \
+    openssh-server \
     netcat \
     ruby \
     vim \
